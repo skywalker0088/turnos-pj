@@ -1,0 +1,46 @@
+schema: spec-driven
+
+context: |
+  Dominio: sistema de gestión de turnos (agenda de citas).
+
+  Stack: Vue 3 (Composition API con <script setup>), Vite, TypeScript,
+  Vue Router, Pinia, Vitest + @vue/test-utils, ESLint + Prettier + oxlint.
+
+  Convenciones:
+  - Código y comentarios en español; nombres de símbolos en inglés.
+  - Vistas en src/views/, componentes reutilizables en src/components/,
+    stores de Pinia en src/stores/, rutas en src/router/index.ts.
+  - Tests unitarios junto al código en carpetas __tests__/ con sufijo .spec.ts.
+  - Antes de dar por terminado un cambio: npm run type-check, npm run lint y
+    npm run test:unit deben pasar.
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
