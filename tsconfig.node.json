@@ -14,6 +14,10 @@
     "module": "preserve",
     "moduleResolution": "bundler",
 
+    // El cargador nativo de Vite exige la extensión al importar `vite.config.ts`
+    // desde `vitest.config.ts`, de modo que hay que permitirla acá.
+    "allowImportingTsExtensions": true,
+
     // Include Node.js types and avoid accidentally including other `@types/*` packages.
     "types": ["node"],
 
